@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Pichoil Hamed Yaya Koné</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #007bff;
+            --dark: #333;
+            --light: #f4f4f4;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        header { background: var(--dark); color: #fff; padding: 2rem 0; text-align: center; border-bottom: 5px solid var(--secondary); }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; color: #ccc; }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
+        section { padding: 3rem 0; }
+        h2 { text-align: center; color: var(--primary); margin-bottom: 2rem; font-size: 2rem; text-transform: uppercase; }
+        
+        /* About Section */
+        .about { text-align: center; max-width: 800px; margin: auto; font-size: 1.1rem; }
+        
+        /* Skills Section */
+        .skills { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .skill-tag { background: var(--secondary); color: #fff; padding: 10px 20px; border-radius: 5px; font-weight: bold; }
+        
+        /* Projects Section */
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { color: var(--primary); margin-bottom: 10px; }
+        .card a { display: inline-block; margin-top: 15px; text-decoration: none; color: #fff; background: var(--dark); padding: 8px 15px; border-radius: 5px; }
+        .card a:hover { background: var(--secondary); }
+        
+        /* Contact Section */
+        footer { background: var(--dark); color: #fff; text-align: center; padding: 2rem 0; margin-top: 2rem; }
+        footer a { color: var(--secondary); text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Pichoil Hamed Yaya Koné</h1>
+            <p>Développeur Mobile (Flutter) | Technicien Réseau & Sécurité</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>À propos de moi</h2>
+        <div class="about">
+            <p>Certifié <strong>"Niveau Avancé" en Développement Mobile</strong> par l'Organisation Internationale de la Francophonie (OIF) et fort d'une expérience de plus de 2 ans en support IT chez Mahan Consulting. Je combine une solide base en architecture réseau avec une passion pour la création d'applications fluides et performantes. Je suis curieux, autonome et toujours prêt à relever de nouveaux défis technologiques.</p>
+        </div>
+    </section>
+
+    <section class="container" style="background-color: #fff; padding: 3rem 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+        <h2>Mes Compétences</h2>
+        <div class="skills">
+            <div class="skill-tag">Flutter & Dart</div>
+            <div class="skill-tag">Architecture BLoC</div>
+            <div class="skill-tag">Firebase & SQFLite</div>
+            <div class="skill-tag">HTML / CSS / JS</div>
+            <div class="skill-tag">Réseaux & Sécurité</div>
+            <div class="skill-tag">Analyse IA (Cisco)</div>
+            <div class="skill-tag">Git / GitHub</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Mes Projets Récents</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Eco-Sort</h3>
+                <p>Application mobile développée avec Flutter pour la gestion et le tri des déchets. Mise en place d'interfaces interactives et gestion de données locales.</p>
+                <a href="https://github.com/MEDHASHOP" target="_blank">Voir sur GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Shop / E-commerce</h3>
+                <p>Application e-commerce intégrant l'architecture BLoC pour la gestion d'état et SQFLite/Firebase pour la gestion du catalogue et du panier utilisateur.</p>
+                <a href="https://github.com/MEDHASHOP" target="_blank">Voir sur GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Projet Final (Activite5)</h3>
+                <p>Développement de solutions applicatives démontrant ma maîtrise des concepts avancés de développement mobile validés lors de ma certification OIF.</p>
+                <a href="https://github.com/MEDHASHOP" target="_blank">Voir sur GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <p>Prêt à collaborer sur de nouveaux projets !</p>
+            <p>📞 07 10 51 41 55</p>
+            <p>📧 <a href="mailto:konepichor@gmail.com">konepichor@gmail.com</a></p>
+            <p>📍 Abidjan, Côte d'Ivoire</p>
+            <br>
+            <p><a href="https://github.com/MEDHASHOP" target="_blank">👉 Visiter mon profil GitHub</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
